@@ -13,9 +13,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         APITriviaURLBuilder builder = new APITriviaURLBuilder();
 
-        QuizCategory category = null;
-        QuizDifficulty difficulty = null;
-        QuizType quizType = null; 
 
         do{
         String askCategory =
