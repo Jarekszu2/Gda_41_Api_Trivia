@@ -53,6 +53,10 @@ public class APITriviaURLBuilder {
         }
     }
 
+    public String compileURL() {
+        return builder.toString();
+    }
+
     @Override
     public String toString() {
         return "APITriviaURLBuilder{" +
