@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        // api trivia
         APITriviaURLBuilder builder = new APITriviaURLBuilder();
         QuizParameters quizParameters = new QuizParameters();
         ScannerContentLoader scannerContentLoader = new ScannerContentLoader();
@@ -24,8 +25,8 @@ public class Main {
 
         String requestURL = builder.compileURL();
 
-        System.out.println(requestURL);
+        TriviaAPI api = new TriviaAPI();
 
-
+        api.loadURLbyInputStream(requestURL).getResults().forEach(System.out::println);
     }
 }
