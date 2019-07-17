@@ -20,9 +20,11 @@ public class Main {
         scannerContentLoader.loadDifficulty(quizParameters);
         scannerContentLoader.loadType(quizParameters);
 
+        builder.loadParameters(quizParameters);
 
-        System.out.println(quizParameters);
+        String requestURL = builder.compileURL();
 
+        System.out.println(requestURL);
 
 
     }
