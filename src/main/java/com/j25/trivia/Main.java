@@ -25,6 +25,8 @@ public class Main {
 
         String requestURL = builder.compileURL();
 
+        System.out.println(requestURL); //mój dodatek
+
         TriviaAPI api = new TriviaAPI();
 
         api.loadURLbyInputStream(requestURL).getResults().forEach(System.out::println);
